@@ -48,10 +48,10 @@ export const transformFirebaseData = (data: any): GraphData => {
       const paramNode: NodeData = {
         id: paramId,
         label: param.name,
-        type: 'parameter',
+        type: 'test',
         size: 1,
         position: randomPosition(-60, 60),
-        color: getNodeColor('parameter'),
+        color: getNodeColor('test'),
         connections: [{
           target: testId,
           relationship: 'contains',
